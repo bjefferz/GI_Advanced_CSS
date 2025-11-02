@@ -1,0 +1,50 @@
+body {
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+table {
+  border-collapse: collapse;
+}
+.flag {
+  width: 760px;
+  height: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+td {
+  padding: 0;
+  margin: 0;
+}
+.stripe {
+  height: calc(400px / 13);
+}
+.red {
+  background-color: #b22234;
+}
+.white {
+  background-color: #ffffff;
+}
+
+.blue {
+  background-color: #3c3b6e;
+  width: 40%;
+  vertical-align: top;
+}
+
+.stars {
+  border-collapse: collapse;
+  margin: 6% auto 0 auto;
+}
+.stars tr {
+  height: 22px;
+}
+.stars td {
+  width: 22px;
+  height: 22px;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  font-size: 14px;
+  line-height: 1;
+}

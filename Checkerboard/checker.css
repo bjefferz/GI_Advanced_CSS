@@ -1,0 +1,43 @@
+.checkerboard {
+  display: grid;
+  grid-template-columns: repeat(8, 100px);
+  grid-template-rows: repeat(8, 100px);
+  width: 800px;
+  height: 800px;
+  border: 5px solid rgb(47, 65, 165);
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+}
+
+.square:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.square:nth-child(even) {
+  background-color: #000000;
+}
+
+.checkerboard div:nth-child(16n + 9),
+.checkerboard div:nth-child(16n + 11),
+.checkerboard div:nth-child(16n + 13),
+.checkerboard div:nth-child(16n + 15),
+.checkerboard div:nth-child(16n + 2),
+.checkerboard div:nth-child(16n + 4),
+.checkerboard div:nth-child(16n + 6),
+.checkerboard div:nth-child(16n + 8) {
+  background-color: #000000;
+}
+
+.checkerboard div:nth-child(16n + 1),
+.checkerboard div:nth-child(16n + 3),
+.checkerboard div:nth-child(16n + 5),
+.checkerboard div:nth-child(16n + 7),
+.checkerboard div:nth-child(16n + 10),
+.checkerboard div:nth-child(16n + 12),
+.checkerboard div:nth-child(16n + 14),
+.checkerboard div:nth-child(16n + 16) {
+  background-color: #ffffff;
+}
